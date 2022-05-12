@@ -1,0 +1,16 @@
+
+public class Main extends Thread{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test t1 = new Test();
+		t1.setName("vedant");
+		t1.setPriority(MIN_PRIORITY);
+		t1.start();
+		
+		Test t2 = new Test();
+		t2.setName("vishal");
+		t2.start();
+	}
+
+}

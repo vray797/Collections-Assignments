@@ -1,0 +1,21 @@
+package jdbc_mongodb;
+
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.client.MongoDatabase;
+
+public class MongoClientConnection {
+	public static void main(String args[]) {
+		try {
+			MongoClient mongoClient = new MongoClient("localhost", 27017);
+			DB db = mongoClient.getDB("mydb");
+			System.out.println("connected");
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		System.out.println("server is ready");
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Test extends Thread {
+	public void run() {
+		System.out.println("running meathod");
+		for (int i = 0; i < 10; i++) {
+			System.out.println("vedent");
+		}
+	}
+}

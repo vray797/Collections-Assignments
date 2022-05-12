@@ -1,0 +1,17 @@
+package jdbc_mongodb;
+
+import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.client.MongoDatabase;
+
+public class MongoClientConnection {
+	public static void main(String args[]) {
+		MongoClient mongo = new MongoClient("localhost", 27017);
+		MongoCredential credential;
+		credential = MongoCredential.createCredential(null, "mydb", null);
+		System.out.println("connected");
+		MongoDatabase database = mongo.getDatabase("mydb");
+		System.out.println("Credential" + credential);
+	}
+
+}

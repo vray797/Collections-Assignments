@@ -1,0 +1,5 @@
+package jdbc_mongodb;
+
+public class MongoClientConnection {
+
+}
